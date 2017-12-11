@@ -1,0 +1,8 @@
+applications:
+- path: KHUB.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: KHUB2TEST
+  host: khub2test
+  disk_quota: 512M

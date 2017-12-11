@@ -1,0 +1,67 @@
+#Carousel_Spotlight {
+		width:			300px;
+		overflow:		hidden;
+		height:120px;
+	} 
+ 
+ #Carousel_Testimonials{
+		width:			300px;
+		overflow:		hidden;
+		height:150px;
+	}
+
+	#Carousel_Testimonials ul, #Carousel_Spotlight ul {
+		width:	280px;
+padding-left: 10px;
+		height:280px;
+	}
+
+	#Carousel_Testimonials ul li, #Carousel_Spotlight ul li {
+		width:280px;
+		text-align:		center;
+		height:	280px;
+		list-style:		none;
+		float:	left;
+		padding-right:0px;
+		margin-left:0px;
+		color: maroon;
+}
+	#Carousel_Testimonials ul li span, #Carousel_Spotlight ul li span{
+	display: block;
+		width:280px;
+		text-align:		center;
+		height:	280px;
+		list-style:		none;
+		float:	left;
+		color:black;
+		padding-top:10px;
+}
+/* #Carousel_Spotlight {
+		width:			300px;
+		overflow:		hidden;
+		height:180px;
+	}
+
+	#Carousel_Spotlight ul {
+		width:	280px;
+padding-left: 10px;
+		height:280px;
+	}
+
+	#Carousel_Spotlight ul li {
+		width:280px;
+		text-align:		center;
+		height:	280px;
+		list-style:		none;
+		float:	left;
+		padding-right:0px;
+		margin-left:0px;
+}
+	#Carousel_Spotlight ul li span{
+	display: block;
+		width:280px;
+		text-align:		center;
+		height:	280px;
+		list-style:		none;
+		float:	left;
+} */

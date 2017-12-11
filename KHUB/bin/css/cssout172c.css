@@ -1,0 +1,98 @@
+#div_172c_0{border: 0px solid #eee;}
+
+
+#left {
+  width:270px;
+  height:1150px;
+  float:left;
+  background-color:#404040;
+}
+
+#secondDiv {
+  width:20px;
+  height:1150px;
+  float:left;
+  background-color:#E0E0E0;
+}
+
+#centre{
+	width:1100px;
+  height:1150px;
+  float:left;
+}
+
+#right {
+  width:270px;
+  height:1150px;
+  float:left;
+}
+
+#blank1{width:200px;}
+
+#banner{width: 1020px; height: 200px; margin: 0px; padding: 0px;}
+
+#banner_img{width: 1020px; height: 200px;}
+
+#welcome{width: 1000px; margin: 0px; padding: 10px 0px 10px 20px; background-color: #12763c; font-weight: bold; font-size: 26px; color:#ffffff;}
+
+#search{margin-left: 0px; padding: 8px 10px 0px 0px; width: 980px; background-color: #ffffff;}
+
+#search_text{border-style:solid none solid solid;border-color:#4B7B9F;border-width:1px;}
+
+#txtsrch{width:984px; border:0px solid; height:17px; padding:0px 5px; position:relative;}
+
+#search_button{border-style:solid;border-color:#4B7B9F;border-width:1px;}
+
+
+
+#resp{width: 1190px; margin: 0px 5px 5px 5px; font-color:blue ;}
+#profile{width: 1020px; margin: 10px 0px 0px 0px; font-color:blue ;}
+
+#response_table{width: 1020px; border: 1px solid rgb(235, 235, 235); background-color: rgb(250, 250, 250); font-family: Arial,Helvetica,sans-serif; font-weight: normal; color: rgb(85, 85, 85);}
+
+#td{padding: 8px 0px 8px 0px; font-size: 14px; text-align: left; width: 490px;}
+
+#td2{padding: 8px 0px 8px 0px; font-size: 14px; text-align: left; width: 490px;}
+
+#table_span{text-decoration:none; font-family:Calibri, sans-serif; mso-font-charset:0}
+
+#tr_even{height:20}
+
+#tr_odd{background-color: #f7f6f6;height:20}
+
+#download{padding: 10px 10px 0px 0px; width: 980px; background-color: #ffffff;}
+
+#click{border-style: none; background: url('../images/download1.jpg') no-repeat; width: 102px; height: 40px; cursor: pointer;}
+#member{border-style: none; width: 102px; height: 40px; cursor: pointer;}
+
+input[type=checkbox].css-checkbox {
+							position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+						}
+
+						input[type=checkbox].css-checkbox + label.css-label {
+							padding-left:29px;
+							height:18px; 
+							display:inline-block;
+							line-height:20px;
+							background-repeat:no-repeat;
+							background-position: 0 0;
+							font-size:14px;
+							vertical-align:middle;
+							cursor:pointer;
+
+						}
+
+						input[type=checkbox].css-checkbox:checked + label.css-label {
+							background-position: 0 -17px;
+						}
+						label.css-label {
+				background-image:url(search.png);
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+
+

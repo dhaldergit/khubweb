@@ -1,0 +1,59 @@
+
+
+section, header, footer, nav, div, span, ul, li, a {
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #f2f2f2;
+}
+
+header nav {
+}
+
+#bg { position: fixed; top: 0; left: 0; }
+.bgwidth { width: 100%; }
+.bgheight { height: 100%; }
+
+section {
+    float: left;
+    display: block;
+    height: 100%;
+    padding: 75px 0 0 0;
+    margin: 0;
+}
+
+#section-section1 {
+    background: #2c3e50;
+}
+
+#section-section2 {
+    background: #16a085;
+}
+
+#section-section3 {
+    background: #27ae60;
+}
+
+#section-section4 {
+    background: #c0392b;
+}
+
+.horizon-prev, .horizon-next {
+    position: fixed;
+    
+    margin-top: -24px;
+    z-index: 99;
+}
+
+.horizon-prev {
+    left: 10px;
+}
+
+.horizon-next {
+    right: 10px;
+}

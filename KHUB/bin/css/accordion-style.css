@@ -1,0 +1,51 @@
+#accordion { 
+	background:#c9e4a7;
+	width: 546px;
+	border:1px solid #333;	
+	-background:#666;
+}
+#accordion .pane {
+	/*border:1px solid #fff;
+	border-width:0 2px;
+	display:none;*/
+
+	/*height:180px;*/
+	padding:15px;
+	color:#000;
+	font-size:12px;
+	
+}
+
+
+
+.demoHeaders {
+		margin-top: 2em;
+	}
+	#dialog-link {
+		padding: .4em 1em .4em 20px;
+		text-decoration: none;
+		position: relative;
+	}
+	#dialog-link span.ui-icon {
+		margin: 0 5px 0 0;
+		position: absolute;
+		left: .2em;
+		top: 50%;
+		margin-top: -8px;
+	}
+	#icons {
+		margin: 0;
+		padding: 0;
+	}
+	#icons li {
+		margin: 2px;
+		position: relative;
+		padding: 4px 0;
+		cursor: pointer;
+		float: left;
+		list-style: none;
+	}
+	#icons span.ui-icon {
+		float: left;
+		margin: 0 4px;
+	}

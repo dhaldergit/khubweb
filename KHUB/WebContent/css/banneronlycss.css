@@ -1,0 +1,10 @@
+@CHARSET "ISO-8859-1";
+
+#blank1{width:200px;}
+
+#banner{width: 1400px; height: 200px; margin: 0px; padding: 0px;}
+
+#banner_img{width: 1400px; height: 200px;}
+
+#welcome{width: 1000px; margin: 0px; padding: 10px 0px 10px 20px; background-color: #ff0080; font-weight: bold; font-size: 26px; color:#0000ff;}
+

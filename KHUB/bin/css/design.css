@@ -1,0 +1,10 @@
+@CHARSET "ISO-8859-1";
+
+#submit
+{
+border-style: none;
+background: url('../images/searchbutton9.png') no-repeat;
+ width: 24px;
+ height: 25px;
+ cursor: pointer;
+	}

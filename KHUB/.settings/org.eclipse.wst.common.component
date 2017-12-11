@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="KHUB_TEST">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes/" source-path="/ImportedClasses"/>
+        <dependent-module archiveName="com.ibm.ed-v2.3.2.2.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/com.ibm.ed-v2.3.2.2/com.ibm.ed-v2.3.2.2">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.ibm.ed.connectors-v2.3.2.2.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/com.ibm.ed.connectors-v2.3.2.2/com.ibm.ed.connectors-v2.3.2.2">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-codec-1.9.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/commons-codec-1.9/commons-codec-1.9">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="aopalliance-repackaged-2.4.0-b09.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/aopalliance-repackaged-2.4.0-b09/aopalliance-repackaged-2.4.0-b09">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="validation-api-1.1.0.Final.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/validation-api-1.1.0.Final/validation-api-1.1.0.Final">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-lang3-3.4.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/commons-lang3-3.4/commons-lang3-3.4">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-logging-1.2.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/commons-logging-1.2/commons-logging-1.2">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="additionnal.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/additionnal/additionnal">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="box-view.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/box-view/box-view">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="box-java-sdk-2.1.1.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/box-java-sdk-2.1.1/box-java-sdk-2.1.1">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/KHUB_TEST/build/classes"/>
+        <property name="context-root" value="KHUB_TEST"/>
+    </wb-module>
+</project-modules>

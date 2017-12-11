@@ -1,0 +1,662 @@
+<!DOCTYPE HTML>
+<!--[if IE 8 ]><html lang="en" class="ie8"><![endif]-->
+<!--[if IE 9 ]><html lang="en" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Page Scroll to id - jQuery plugin demo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- stylesheet for demo and examples -->
+<link rel="stylesheet" href="css/style_design.css">
+<link rel="stylesheet" href="css/style2.css">
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css"
+	rel="stylesheet" type="text/css">
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="js/portBox.slimscroll.min.js"></script>
+<script src="js/data.js"></script>
+<link rel="stylesheet" href="css/master.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" media="all" />
+
+<link rel="stylesheet" href="css/new-topnav.css" media="screen">
+<script type="text/javascript" src="jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="jquery.touchSwipe.js"></script>
+    <script type="text/javascript" src="jquery.horizonScroll.js"></script>
+<!-- <link rel="stylesheet" href="css/form-styles-v4.css" media="screen">-->
+<link rel="stylesheet" href="css/form-styles-v5.css" media="screen"> 
+<link rel="stylesheet" href="css/form-styles.css" media="screen">
+<!-- <link rel="stylesheet" type="text/css" href="css/default.css" /> -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/pfeedback.js"></script>
+<link
+	href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,700'
+	rel='stylesheet' type='text/css'>
+<link href="css/portBox.css" rel="stylesheet" />
+
+
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+	
+	</head>
+
+<body>
+	<header>
+		<h1>Proposal Assist Team</h1>
+	</header>
+	
+	<nav id="navigation-menu">
+		<ul>
+
+			<li><a href="#section-1"><img src="icons/aboutus_sm.png">
+					ABOUT US</a></li>
+			<li><a href="#section-2"><img src="icons/ourwork_sm.png">
+					OUR WORK</a></li>
+			<li><a href="#section-3"><img src="icons/portfolio_sm.png">
+					PORTFOLIO</a></li>
+			<li><a href="#section-4"><img src="icons/team_sm.png">
+					OUR TEAM</a></li>			
+			<li><a href="#" data-display="contact_form"><img
+					src="icons/request_sm.png"> CONTACT US</a></li>
+			<li><a href="#" data-display="feedback_form"><img
+					src="icons/feedback_sm.png"> FEEDBACK</a></li>
+		</ul>
+	</nav>
+
+	<div id="content">
+	
+		<section id="section-1">
+		<background="images/CherryBlossom.jpg">
+<div class="horizon-prev"><img src="images/l-arrow.png"></div>
+<div class="horizon-next"><img src="images/r-arrow.png"></div>
+			<div class="content">
+				<h2>About Us</h2>
+				
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit
+					esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+					occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+					mollit anim id est laborum.</p>
+				<hr />
+			</div>
+			
+		</section>
+		<section id="section-2">
+		
+<
+			<div class="content">
+				<h2>Our Work</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+					do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+					enim ad minim veniam, quis nostrud exercitation ullamco laboris
+					nisi ut aliquip ex ea commodo consequat.</p>
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit
+					esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+					occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+					mollit anim id est laborum.</p>
+				<hr />
+			</div>
+		</section>
+		<section id="section-3">
+			<div class="content">
+				<h2>Our Portfolio</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+					do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+					enim ad minim veniam, quis nostrud exercitation ullamco laboris
+					nisi ut aliquip ex ea commodo consequat.</p>
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit
+					esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+					occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+					mollit anim id est laborum.</p>
+				<hr />
+			</div>
+		</section>
+		<section id="section-4">
+			<div class="content">
+				<h2>Our Team</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+					do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+					enim ad minim veniam, quis nostrud exercitation ullamco laboris
+					nisi ut aliquip ex ea commodo consequat.</p>
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit
+					esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+					occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+					mollit anim id est laborum.</p>
+				<hr />
+			</div>
+		</section>		
+	</div>
+	<div id="contact_form" class="portBox" >
+		<h3>PAT Request Form</h3>
+		<!-- Required Div Starts Here -->
+		<div class="data-holder">
+					<div class="form-holder">
+					
+						<form action="request" method="post" name="patreq" class="form-pat" onsubmit="return verifyForm()" >
+							
+							<h1>PAT Request 
+							<span>Please fill up the Request Details section (<span class="required">*</span> indicates mandatory fields)</span>
+							</h1>
+							
+												
+								  
+								
+							<fieldset>
+								<legend>Opportunity Details:</legend>
+								
+								<div class="leftfield">
+									<label>
+									<span>Geo</span>
+									<input  id="Geo" type="text" name="geo" placeholder="" enabled />
+									</label>
+								</div>
+								
+								<div class="rightfield">
+									<label>
+									<span>Region</span>
+									<input id="Region" type="text" name="reg" placeholder="" enabled />
+									</label>
+								</div>
+								
+								<div class="leftfield">
+									<label>
+									<span>Country</span>
+									<input  id="Country" type="text" name="cntry" placeholder="" enabled />
+									</label>
+								</div>
+								
+								<div class="rightfield">
+									<label>
+									<span>Sector</span>
+									<input  id="Sctr" type="text" name="sctr" placeholder="" enabled />
+									</label>
+								</div>
+								
+								<div class="leftfield">
+									<label>
+									<span>Industry</span>
+									<input  id="Industry" type="text" name="inds" placeholder="" enabled />
+									</label>
+								</div>
+								
+								<div class="rightfield">
+									<label>
+									<span>Client Name</span>
+									<input  id="clnt" type="text" name="clntnm" placeholder="" enabled />
+									</label>
+								</div>
+								
+								<div class="fullfield">
+									<label>
+									<span>Opportunity Name</span>
+									<input  id="oname" type="text" name="oppname" placeholder="" enabled />
+									</label>
+								</div>
+								
+								<div class="fullfield">
+									<label>
+									<span>Opportunity Description</span>
+									<textarea  id="Comment" name="comment" placeholder="" enabled></textarea>
+									</label>
+								</div>
+								
+								<div class="leftfield">
+									<label>
+									<span>Primary Service Line</span>
+									<input  id="Service" type="text" name="psl" placeholder="" enabled />
+									</label>
+								</div>
+								
+								<div class="rightfield">
+									<label>
+									<span>Primary Offering Area</span>
+									<input  id="Offering" type="text" name="ofa" placeholder="" enabled />
+									</label>
+								</div>
+								
+								<div class="leftfield">
+									<label>
+									<span>Total GBS TCV (USD,M)</span>
+									<input  id="Total" type="text" name="gbs" placeholder="" enabled />
+									</label>
+								</div>
+								
+								<div class="rightfield">
+									<label>
+									<span>Opportunity Owner</span>
+									<input  id="Owner" type="text" name="oppown" placeholder="" enabled />
+									</label>
+								</div>
+								
+							</fieldset>
+							
+							<font color='red'> <div id="ijk"> </div> </font><br/>
+							<fieldset>
+								<legend>Request Details</legend>
+								
+								<div class="leftfield">
+									<label>
+									<span>Request Date</span><input id="demo1" type="text" name="reqstdate" style="width: 290px;"><a href="javascript:NewCal('demo1')"><img src="images/cal.gif" width="16" height="16" border="0"></a>
+
+									</label>
+								</div>
+								
+								<div class="rightfield">
+									<label>
+									<span>Requestor (Intranet id or LN Id) <span class="required">*</span></span>
+									<input id="Email" type="text" name="rqstr" placeholder="" />
+									</label>
+								</div>
+								
+								
+								
+								<div class="rightfield">
+									<label>
+									<span>Contract Type <span class="required">*</span></span>
+									<select name="cntrtyp" id="ctrct">
+										<option value="Existing" selected>Existing</option>
+										<option value="Renew">Renew</option>
+										<option value=""></option>
+									</select>
+									</label>
+								</div>
+								
+								<div class="leftfield">
+									<label>
+									<span>Incumbent</span>
+									<input id="Incumbent" type="text" name="inc" placeholder="" />
+									</label>
+								</div>
+								
+								<div class="rightfield">
+									<label>
+									<span>Main Competition</span>
+									<input id="Competition" type="text" name="mncomp" placeholder="" />
+									</label>
+								</div>
+								
+								<div class="leftfield">
+									<label>
+									<span>Other Competitors</span>
+									<input id="Competitors" type="text" name="othcomp" placeholder="" />
+									</label>
+								</div>
+								
+								<div class="rightfield">
+									<label>
+									<span>Required Start Date <span class="required">*</span></span>
+									<input id="demo5" type="text" name="stdate" style="width: 290px;"><a href="javascript:NewCal('demo5')"><img src="images/cal.gif" width="16" height="16" border="0"></a>
+
+									</label>
+								</div>
+								
+<div class="fullfield">
+									<label>
+									<span>Competitive Strategy Summary</span>
+									<textarea id="csc" name="summ" placeholder=""></textarea>
+									</label>
+								</div>
+								
+								<div class="leftfield">
+									<label>
+									<span>Date this Proposal is Due from Proposal Hub <span class="required">*</span></span>
+									<input id="demo6" type="text"  name="pdp" style="width: 290px;"><a href="javascript:NewCal('demo6')"><img src="images/cal.gif" width="16" height="16" border="0"></a>
+
+									</label>
+								</div>
+								
+								<div class="rightfield">
+									<label>
+									<span>Date this Proposal is Due to Customer <span class="required">*</span></span><input id="demo7" type="text" name="pdc" style="width: 290px;"><a href="javascript:NewCal('demo7')"><img src="images/cal.gif" width="16" height="16" border="0"></a>
+
+									</label>
+								</div>
+								
+								<div class="fullfield">
+									<label>
+									<span>Comments or Additional Requirements</span>
+									<textarea id="Additional Comment" name="add" placeholder=""></textarea>
+									</label>
+								</div>
+							</fieldset>
+							<label>
+								<span>&nbsp;</span> 
+								<input type="submit" class="button" value="Submit" />&nbsp;&nbsp;
+								<input type="button" class="button" value="Reset" /> 
+							</label>
+							
+						</form>
+						
+					</div>
+					
+				</div>
+	</div>
+	<div id="feedback_form" class="portBox" >
+
+
+				<div class="data-holder">
+					
+					
+					
+					
+					
+						<form action="PatFeedback" method="post"  name="pback" class="pat-form" onsubmit="return verifyPat()">
+						
+							<h1>PAT Feedback Form
+							<span>Please fill all the texts in the fields.</span>
+							</h1>
+
+							
+							<font color='red'>
+									<div id="fed"></div>
+								</font>
+							
+							
+							<label>
+								<span>Opportunity Number <span style="color: red;">*</span> :</span>
+								<input id="oppnumb" type="text" name="txtoppno" placeholder="" />
+							</label>
+
+							<label>
+								<span>Opportunity Name <span style="color: red;">*</span> :</span>
+								<input id="oppnm" type="text" name="txtoppname" placeholder="" />
+							</label>
+
+							<label>
+								<span>Feedback Submitter Name <span style="color: red;">*</span> :</span>
+								<input id="submitr" type="text" name="txtsubmitter" placeholder="" />
+							</label>
+							
+
+							<label>
+								<span>Feedback Submitter LN ID <span style="color: red;">*</span> :</span>
+								<input id="sid" type="text" name="txtsubid" placeholder=""/>
+							</label>
+
+
+							
+							
+						<div class="clear"></div>	
+
+
+						    <div class="def">
+								<fieldset>
+
+						
+										<legend>
+											<span class="required">* </span>Please rate the following
+											questions (5-Exellent, 1-Poor)
+										</legend>
+							
+						
+							
+										<div class="leftfield">
+											<label> <span>1.&nbsp;Overall Satisfaction Level<span
+													class="required">*</span>
+											</span>
+
+											</label>
+
+										</div>
+
+
+
+
+										<div class="leftfield">
+
+											<span><input type="radio" id="satlvl" name="txtslvl"
+												value="5" >5</span>
+												 <span> <input
+												type="radio" id="satlvl" name="txtslvl" value="4">4
+											</span>
+											 <span><input type="radio" id="satlvl" name="txtslvl" value="3">3</span>
+
+											<span><input type="radio" id="satlvl" name="txtslvl" value="2">2</span>
+
+											<span><input type="radio" id="satlvl" name="txtslvl" value="1">1</span>
+
+
+										</div>
+
+
+										<div class="clear"></div>
+
+
+
+
+										<div class="leftfield">
+
+											<label> <span>2.&nbsp;Quality Of Proposal/documents<span class="required">*</span>
+											</span>
+
+											</label>
+
+
+										</div>
+
+
+
+										<div class="leftfield">
+
+											<span><input type="radio" id="qap" name="txtprop"
+												value="5" >5</span> 
+												<span> <input
+												type="radio" id="qap" name="txtprop" value="4">4
+											</span>
+											 <span><input type="radio" id="qap" name="txtprop" value="3">3</span>
+
+
+											<span><input type="radio" id="qap" name="txtprop" value="2">2</span>
+
+
+											<span><input type="radio" id="qap" name="txtprop" value="1">1</span>
+
+
+
+										</div>
+
+
+										<div class="clear"></div>
+
+
+										
+										<div class="leftfield">
+
+											<label> <span>3.&nbsp;Submitted proposal on Time<span class="required">*</span>
+											</span>
+
+											</label>
+
+
+
+										</div>
+
+
+										<div class="leftfield">
+
+											<span><input type="radio" id="subid" name="txttime"
+												value="5" >5</span>
+												 <span> <input
+												type="radio" id="subid" name="txttime" value="4">4
+											</span> 
+											<span><input type="radio" id="subid" name="txttime" value="3">3</span>
+
+
+											<span><input type="radio" id="subid" name="txttime" value="2">2</span>
+
+
+											<span><input type="radio" id="subid" name="txttime" value="1">1</span>
+
+
+										</div>
+
+										<div class="clear"></div>
+										
+
+										<div class="leftfield">
+											<label> <span>4.&nbsp;Responsiveness of Team<span class="required">*</span>
+											</span>
+
+											</label>
+
+
+										</div>
+
+
+										
+
+
+										<div class="leftfield">
+											<span><input type="radio" id="resid" name="txtresp"
+												value="5" > 5</span>
+												 <span>
+												  <input type="radio" id="resid" name="txtresp" value="4">4
+											</span>
+											 <span>
+											 <input type="radio" id="resid" name="txtresp" value="3">3</span>
+											<span><input type="radio" id="resid" name="txtresp" value="2">2</span>
+											 <span><input type="radio" id="resid" name="txtresp" value="1">1</span>
+											
+
+
+										</div>
+
+
+										<div class="clear"></div>
+
+
+										
+
+
+
+
+										<div class="leftfield">
+
+											<label> <span>5.&nbsp;Any specific feedback
+													for something you liked<span class="required">*</span>
+											</span>
+
+											</label>
+										</div>
+
+										<div class="fullfield">
+
+											<textarea id= "fdblk" name="txtfdb"></textarea>
+										</div>
+
+
+
+
+										<div class="clear"></div>
+
+
+
+										<div class="leftfield">
+
+
+											<label> <span>6.&nbsp;Any specific feedback
+													for something you did not like<span class="required">*</span>
+											</span>
+
+											</label>
+
+										</div>
+
+
+										<div class="fullfield">
+
+											<textarea id="fdndl" name="txtfdn"></textarea>
+										</div>
+
+
+
+
+
+									</fieldset></div>
+
+							<div class="ijk">
+
+								<span>&nbsp;</span> 
+								<input type="submit" class="button" value="Submit" />&nbsp;&nbsp;
+								<input type="reset" class="button" value="Reset" />
+
+							</div>
+														
+
+						</form>
+
+
+					
+
+
+					
+					
+				</div>
+	</div>
+	<!-- portBox Close -->
+
+	<footer>
+		<p>Proposal Assist Team Page ************** UNDER CONSTRUCTION
+			**************</p>
+	</footer>
+
+	<!-- Google CDN jQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!-- Page Scroll to id plugin -->
+	<script src="js/jquery.malihu.PageScroll2id.js"></script>
+
+	<script>
+		(function($) {
+			$(window).load(function() {
+				/* Page Scroll to id fn call */
+				$("#navigation-menu a,a[href='#top'],a[rel='m_PageScroll2id']").mPageScroll2id(
+				{
+					highlightSelector : "#navigation-menu a"
+				});
+
+				/* demo functions */
+				$("a[rel='next']").click(function(e) {
+					e.preventDefault();
+					var to = $(this).parent().parent("section").next().attr("id");
+					$.mPageScroll2id("scrollTo", to);
+				});
+			});
+			$(window).scroll(function() {
+		    	if ($(this).scrollTop() > 1){  
+		       		$('header').addClass("sticky");
+		    	}
+		    	else{
+		        	$('header').removeClass("sticky");
+		    	}
+			});
+		})(jQuery);
+	</script>
+	
+
+	
+	
+
+</script>
+<script type="text/javascript">
+    // By default, swipe is enabled.
+    $('section').horizon();
+
+    // If you do not want to include another plugin, TouchSwipe, you can set it to false in the default options by passing in the option as false.
+    //$('section').horizon({swipe: false});
+
+    $(document).on('click', '.go-to-2', function () {
+        $(document).horizon('scrollTo', 'section-section2');
+    });
+</script>
+	
+	
+</body>
+</html>

@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Proposal Assist Team</title>
+<meta name="author" content="Nirmalya Goswami" />
+<meta name="description" content="PAT services page" />
+<meta name="keywords" content="proposal, consultancy, knowledge" />
+<meta name="Resource-type" content="Document" />
+
+<link rel="stylesheet" type="text/css" href="css/PAT_1.css" />
+<link rel="stylesheet" type="text/css" href="css/PAT_2.css" />
+
+<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="js/PAT_1.js"></script>
+<script type="text/javascript" src="js/PAT_2.js"></script>
+<script type="text/javascript" src="js/PAT_3.js"></script>
+
+<link
+	href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,700'
+	rel='stylesheet' type='text/css'>
+<link href="css/PAT_3.css" rel="stylesheet" />
+<link href="css/PAT_4.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/tooltip-classic.css" />
+<link rel="stylesheet" href="css/form-styles-v3.css" media="screen">
+	<script>
+	$(document).ready(function(){
+			$(window).scroll(function() {
+		    	if ($(window).scrollTop() > 50){  
+		       		$('#header').addClass("sticky");
+		    	}
+		    	else{
+		        	$('#header').removeClass("sticky");
+		    	}
+			});
+		});
+	</script>
+<script type="text/javascript">
+	$(document)
+			.ready(
+					function() {
+
+						function initialization() {
+							$('#myContainer')
+									.fullpage(
+											{
+												sectionsColor : [ '#4A6FB1',
+														'#4BBFC3', '#7BAABE',
+														'whitesmoke', '#ccddff' ],
+												anchors : [ 'aboutUs',
+														'ourWork', 'portfolio',
+														'ourTeam', 'contactUs' ],
+												resize : false,
+												animateAnchor : false,
+												scrollOverflow : true,
+												autoScrolling : false,
+												responsive : 900,
+												fitSection : false,
+												menu : '#menu',
+												navigation : false,
+												continuousVertical : true,
+												paddingTop : '20px',
+												css3 : true,
+												onLeave : function(index,
+														nextIndex, direction) {
+													console.log("onLeave--"
+															+ "index: " + index
+															+ " nextIndex: "
+															+ nextIndex
+															+ " direction: "
+															+ direction);
+												},
+												afterLoad : function(
+														anchorLink, index) {
+													console.log("afterLoad--"
+															+ "anchorLink: "
+															+ anchorLink
+															+ " index: "
+															+ index);
+												},
+												afterSlideLoad : function(
+														anchorLink, index,
+														slideAnchor, slideIndex) {
+													console
+															.log("afterSlideLoad--"
+																	+ "anchorLink: "
+																	+ anchorLink
+																	+ " index: "
+																	+ index
+																	+ " slideAnchor: "
+																	+ slideAnchor
+																	+ " slideIndex: "
+																	+ slideIndex);
+												},
+												onSlideLeave : function(
+														anchorLink, index,
+														slideIndex, direction) {
+													console
+															.log("onSlideLeave--"
+																	+ "anchorLink: "
+																	+ anchorLink
+																	+ " index: "
+																	+ index
+																	+ " slideIndex: "
+																	+ slideIndex
+																	+ " direction: "
+																	+ direction);
+												},
+												afterRender : function() {
+													console.log("afterRender");
+												},
+												afterResize : function() {
+													console.log("afterResize");
+												}
+											});
+						}
+
+						//fullPage.js initialization
+						initialization();
+
+					});
+</script>
+
+<style>
+ul.img-list {
+	width:900px;
+	margin-left:250px;
+    columns: 4;
+    -webkit-columns: 4;
+    -moz-columns: 4;
+}
+.img-list li{
+height:110px;
+width:110px;
+}
+
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+ul.img-list li:hover span.text-content {
+  opacity: 1;
+}
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 100px;
+  left: 5px;
+  position: relative;
+  top: -107px;
+  width: 100px;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+  border-radius:50%;
+}
+		a.tooltip {outline:none; } 			
+		a.tooltip strong {line-height:5px;} 			
+		a.tooltip:hover {text-decoration:none;} 			
+		a.tooltip span { 			
+		    z-index:10;display:none; padding:0px 5px; 			
+	    margin-top:0px; margin-left:0px; 			
+	    width:150px; height:auto; font-size:12px; 			
+		} 			
+		a.tooltip:hover span{ 			
+		    display:inline; position:absolute; 			
+		    border:1px solid #000000;  color:#000000; 			
+		    background:#FFFFFF repeat-x 0 0; 			
+		}
+			.callout {z-index:20;position:absolute;border:0;top:-14px;left:120px;} 			
+		     			
+		/*CSS3 extras*/ 			
+		a.tooltip span 			
+		{ 			
+		    border-radius:1px;         			
+		    box-shadow: 0px 0px 8px 4px #666; 			
+		    /*opacity: 0.8;*/ 			
+		}
+
+#actions {
+	position: fixed;
+	top: 73px;
+	left: 30px;
+	z-index: 99999;
+}
+
+#actions a {
+	background: rgba(0, 0, 0, 0.8);
+	padding: 7px;
+	margin: 2px;
+	color: #ccc;
+	display: inline-block;
+}
+
+#actions a:hover {
+	color: #fff;
+	background: #81A140;
+}
+
+/* Overwriting styles for control arrows for slides
+		* --------------------------------------- */
+.fp-controlArrow.fp-prev {
+	left: 190px;
+}
+
+.fp-controlArrow.fp-next {
+	right: 60px;
+}
+
+#section0, #section1, #section2, #section3 {
+	background-size: cover;
+	background-attachment: fixed;
+	background-image: url(images/background.jpg);
+	padding: 6% 0 0 0;
+}
+
+/* Style for our header texts
+	* --------------------------------------- */
+.intro p {
+	color: #fff;
+}
+
+/* Centered texts in each section
+	* --------------------------------------- */
+.section {
+	text-align: center;
+}
+
+/* Fixed header and footer.
+	* --------------------------------------- */
+#header {
+	position: fixed;
+	height: 100px;
+	font-size: 50px;
+	display: block;
+	width: 100%;
+	background: #335C7D;
+	z-index: 9;
+	text-align: left;
+	color: #f2f2f2;
+	padding: 10px 0 10px 200px;
+	top: 0px;
+}
+
+body{
+		color: #333;
+		font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+	}
+
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		margin:0;
+		padding:0;
+	}
+	h2{
+		font-size: 2em;
+		margin: 0 0 18px 0;
+		font-family: arial,helvetica;
+	}
+
+
+
+
+	/* Common styles
+	* --------------------------------------- */
+	img{
+	    -webkit-transition: all 0.7s ease-out;
+		-moz-transition: all 0.7s ease-out;
+		-o-transition: all 0.7s ease-out;
+		transition: all 0.7s ease-out;
+	}
+	.section{
+		text-align:center;
+		overflow:hidden;
+	}
+	.wrap{
+		width: 1180px;
+		height: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+	}
+	.box{
+		text-align: left;
+		color: #808080;
+		font-size: 1.2em;
+		line-height: 1.6em;
+	}
+	.background_box{
+		width: 980px;
+		height: 75%;
+		margin-left: 200px;
+		/* margin-right: auto; */
+		position: relative;
+		background-color:#003366;
+		/* padding:20px; */
+		border-radius: 25px;
+	}
+
+/* Section 0
+	* --------------------------------------- */
+
+	#section0 .box{
+		text-align: center;
+		margin: 10% 5% 0 20%;
+	}
+	
+	#section1 .box{
+		text-align: center;
+		margin: 10% 5% 0 5%;
+		padding:20px 0px 0px 0px;
+	}
+	#section2 .box{
+		text-align: center;
+		margin: 10% 5% 0 20%;
+	}
+		#section3 .box{
+		text-align: center;
+		margin: 10% 5% 0 20%;
+	}
+
+
+	/* Overwriting fullPage.js tooltip color
+	* --------------------------------------- */
+	.fp-tooltip{
+		color: #AAA;
+	}
+	#fp-nav span, .fp-slidesNav span{
+		border-color: #AAA;
+	}
+	#fp-nav li .active span, .fp-slidesNav .active span{
+		background: #AAA;
+	}
+</style>
+<style type="text/css">
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+
+</style>
+</head>
+<body>
+
+	<nav id="menu">
+		<ul>
+			<li data-menuanchor="aboutUs"><a href="#aboutUs"><img
+					src="icons/aboutus_sm.png">ABOUT US</a></li>
+			<li data-menuanchor="ourWork"><a href="#ourWork"><img
+					src="icons/ourwork_sm.png">OUR WORK</a></li>
+			<li data-menuanchor="portfolio"><a href="#portfolio"><img
+					src="icons/portfolio_sm.png">PORTFOLIO</a></li>
+			<li data-menuanchor="ourTeam"><a href="#ourTeam"><img
+					src="icons/team_sm.png">OUR TEAM</a></li>
+			<li><a href="#!" data-display="contact_form"><img
+					src="icons/request_sm.png"> CONTACT US</a></li>
+			<li><a href="#" data-display="feedback_form"><img
+					src="icons/feedback_sm.png"> FEEDBACK</a></li>
+		</ul>
+	</nav>
+	<div id="header">Proposal Assist Team</div>
+	<div id="myContainer">
+
+		<div class="section" id="section0">
+			<div class="wrap">
+			<div class="box">
+				<h2>About Us</h2>
+			<div style="text-align:left;">
+				Proposal Hub provides customized support for individual proposal development work, for deals between $5-25M USD. The team leverages the best available material from previous proposals, service line and industry sources or create afresh and customized it for your client's specific requirement. One prime objectives for this service is to ensure that new age offerings, like CAMSS, are an integral part of our proposals. Individual proposal managers for service lines and sectors may be contacted for support as required. 
+</div>
+</div>
+			</div>
+		</div>
+		<div class="section" id="section1">
+			<div class="slide">				
+				<div class="wrap">
+				<div class="background_box">
+				<div class="box">
+				<h2>Our Work</h2>
+				<div style="text-align:left;">
+				This team is formed to provide customized support for individual proposal development work, for deals between $5-25M USD, except iXM at $2-25M. The team will leverage the best available material from previous proposals or create afresh and customized it for your client's specific requirement. One of prime objectives for this team is to ensure that new age offerings, like CAMSS, are an integral part of our proposals. Individual proposal managers for service lines and sectors may be contacted for support as required. Team details are available at the bottom of the pane on the right.
+				</div>
+				</div>
+				</div>
+			</div>
+			</div>
+			<div class="slide">
+			<div class="wrap">
+			<div class="background_box" style="margin-top:100px;">
+				<div class="box" style="width:350px;float:left;margin-left:50px;text-align:left;margin-top:0px;padding-top:20px;">
+				<h2>Proposal Consulting</h2>
+				<div style="text-align:left;">
+				Apart from working on Proposal development, we have strong capability to help the bid team with Client Business insights and Analytics based on our research
+Our Customer and Competition Assessment has helped win several deals in addition to opening new opportunities for IBM
+</div>
+</div>
+<div class="graphics" style="float:left;margin-top:; width:500px;padding-top:20px;"><img id="" src="images/Proposal_Consulting.jpg" width=440 height=432 style="margin:0px;"/></div>
+			</div>	
+			</div>				
+			</div>
+			<div class="slide">
+			<div class="wrap">
+			<div class="background_box">
+			<div class="graphics" style="float:left;margin-left:0px; width:500px;padding-top:20px;"><img id="" src="images/Proposal_Development.jpg" width=440 height=411 style="margin:0px;"/></div>
+				<div class="box" style="padding-top:20px;">
+				<h2>Proposal Development</h2>
+				<div style="text-align:left;">
+				Whether the ask is for full end to end proposal development for Qualified Opportunity, or sections of it, we help, guide and effectively contribute with relevant customized content (except Legal, Pricing and HR). We support - at your location or virtually.
+				</div>
+				</div>
+			</div>
+			</div>
+			</div>
+		</div>
+		<div class="section" id="section2">
+			<div class="slide">
+			<div class="wrap">
+				<div class="box">
+				<h2>Portfolio</h2>
+				<div style="text-align:left;">
+				<br>This team utilizes its expertise and capabilities to contribute and develop end to end client centric proposals emphasizing the importance of understanding the client’s needs at an individual and organizational level. We follow our standard Value Driven Proposal approach towards customizing and enabling our stakeholders - through guidance and exercises- to bring bold ideas to our clients, backed with clear articulation of business value.
+
+<br>With years of accumulated experience across domains and industries the team has gathered strong capabilities across service lines and technologies which are continuously been enhanced to improve our efficiency and quality for you on a continuous basis.
+				</div>
+				</div>
+			</div>
+			</div>
+			<div class="slide">
+				<div class="wrap">
+				<div class="box">
+					<h2>Application Innovation Consulting</h2>
+				</div>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="wrap">
+				<div class="box">
+				<h2>Digital Consulting</h2>
+				<div style="text-align:left;">
+				Digital addresses client needs with a three pillar growth strategy that leverages analytics to engage in new market positions:
+				<ul style="list-style-type:circle;text-align:left;">
+					<li>Lead the Shift to Line of Business</li>
+					<li>Differentiate through end-to-end solutions</li>
+					<li>Accelerate growth of global talent base</li>
+				</ul>
+				</div>
+				</div>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="wrap">
+				<div class="box">
+				<h2>Enterprise Applications</h2>
+				<div style="text-align:left;">
+				<br>Serving EA Service Line - SAP, Oracle and Microsoft Consulting Services
+					<ul style="list-style-type:circle;text-align:left;">
+				    <li>Team of EA specialized consultants led by experienced Proposal Managers</li>
+				    <li>Support crafting of proposals based on new age solutions, core IBM offerings around Cloud, Mobility, Cognitive and Analytics and industry relevant value propositions</li>
+				    <li>Create differentiated and high quality proposals while leveraging best practices</li>
+				    </ul>
+				   </div>
+			</div>
+			</div>	
+			</div>
+		</div>
+		<div class="section" id="section3">
+			<h1>Our Team</h1>
+			<div style="margin-left:500px;width:820px;">
+			<div style=" float:left;width:300px; height:475px">
+			<div style="width:; height:"> <span class="tooltip tooltip-effect-1"><span class="tooltip-item"><img id="yourimage" src="https://w3-connections.ibm.com/profiles/photo.do?key=27ae6bf0-9789-476b-a990-fcc4a856f156&lastMod=1480399958637" width="175" height="175" style="margin:0px 10px 10px 45px;border-radius:50%"/></span><span class="tooltip-content clearfix"><img src="https://w3-connections.ibm.com/profiles/photo.do?key=27ae6bf0-9789-476b-a990-fcc4a856f156&lastMod=1480399958637" /><span class="tooltip-text"><strong></strong>Leader</span></span></span></div>
+			<div style="width:; height:">
+				<table>
+					<tr>
+					  <td><span class="tooltip tooltip-effect-1"><span class="tooltip-item"><img id="yourimage" src="https://w3-connections.ibm.com/profiles/photo.do?key=8cab7100-9bf8-4fc2-a1da-4ac34fad263c&lastMod=1478222860626" width="125" height="125" style="margin:15px 10px 10px 10px;border-radius:50%"/></span><span class="tooltip-content clearfix"><img src="https://w3-connections.ibm.com/profiles/photo.do?key=8cab7100-9bf8-4fc2-a1da-4ac34fad263c&lastMod=1478222860626" /><span class="tooltip-text"><strong></strong>Leader</span></span></span></th>
+					  <td><span class="tooltip tooltip-effect-1"><span class="tooltip-item"><img id="yourimage" src="https://w3-connections.ibm.com/profiles/photo.do?key=88f8c0bf-48a6-43ce-9460-661857824c95&lastMod=1481115689016" width="125" height="125" style="margin:15px 10px 10px 10px;border-radius:50%"/></span><span class="tooltip-content clearfix"><img src="https://w3-connections.ibm.com/profiles/photo.do?key=88f8c0bf-48a6-43ce-9460-661857824c95&lastMod=1481115689016" /><span class="tooltip-text"><strong></strong>Leader</span></span></span></th>
+					</tr>
+					<tr>
+					  <td><span class="tooltip tooltip-effect-1"><span class="tooltip-item"><img id="yourimage" src="https://w3-connections.ibm.com/profiles/photo.do?key=803bdacc-48db-4c0f-ad4a-c7c1042e6422&lastMod=1480581255222" width="125" height="125" style="margin:15px 10px 0px 10px;border-radius:50%"/></span><span class="tooltip-content clearfix"><img src="https://w3-connections.ibm.com/profiles/photo.do?key=803bdacc-48db-4c0f-ad4a-c7c1042e6422&lastMod=1480581255222" /><span class="tooltip-text"><strong></strong>Leader</span></span></span></th>
+					  <td><span class="tooltip tooltip-effect-1"><span class="tooltip-item"><img id="yourimage" src="https://w3-connections.ibm.com/profiles/photo.do?key=e9188df9-b5f9-40d9-90d3-fe329bdb4bc9&lastMod=1480569328257" width="125" height="125" style="margin:15px 10px 0px 10px;border-radius:50%"/></span><span class="tooltip-content clearfix"><img src="https://w3-connections.ibm.com/profiles/photo.do?key=e9188df9-b5f9-40d9-90d3-fe329bdb4bc9&lastMod=1480569328257" /><span class="tooltip-text"><strong></strong>Leader</span></span></span></th>
+					</tr>
+				</table>
+			</div>
+			</div>
+
+			<div style="float:right;width:200px; height:475px;margin-top:0px;margin-right:300px;">
+				<table>
+					<tr>
+					  <td><span class="tooltip_developers tooltip-effect-1"><span class="tooltip-item_developers"><img id="yourimage" src="https://w3-connections.ibm.com/profiles/photo.do?key=402a5a41-b359-4fcc-9db5-40b868b942e5&lastMod=1474672932281" width="75" height="75" style="margin:0px 10px 10px 10px;border-radius:50%"/></span><span class="tooltip-content_developers clearfix"><img src="https://w3-connections.ibm.com/profiles/photo.do?key=402a5a41-b359-4fcc-9db5-40b868b942e5&lastMod=1474672932281" /><span class="tooltip-text"><strong></strong>Leader</span></span></span></th>
+					  <td><span class="tooltip_developers tooltip-effect-1"><span class="tooltip-item_developers"><img id="yourimage" src="https://w3-connections.ibm.com/profiles/photo.do?key=a042d2c7-393e-4b33-867e-0e53c778a782&lastMod=1479897364506" width="75" height="75" style="margin:0px 10px 10px 10px;border-radius:50%"/></span><span class="tooltip-content_developers clearfix"><img src="https://w3-connections.ibm.com/profiles/photo.do?key=a042d2c7-393e-4b33-867e-0e53c778a782&lastMod=1479897364506" /><span class="tooltip-text"><strong></strong>Leader</span></span></span></th>
+					  <td><span class="tooltip_developers tooltip-effect-1"><span class="tooltip-item_developers"><img id="yourimage" src="https://w3-connections.ibm.com/profiles/photo.do?key=37426d92-7160-41d4-bc31-0be7bb0dde0c&lastMod=1479986159047" width="75" height="75" style="margin:0px 10px 10px 10px;border-radius:50%"/></span><span class="tooltip-content_developers clearfix"><img src="https://w3-connections.ibm.com/profiles/photo.do?key=37426d92-7160-41d4-bc31-0be7bb0dde0c&lastMod=1479986159047" /><span class="tooltip-text"><strong></strong>Leader</span></span></span></th>
+					  </tr>
+					<tr>
+					  <td><span class="tooltip_developers tooltip-effect-1"><span class="tooltip-item_developers"><img id="yourimage" src="https://w3-connections.ibm.com/profiles/photo.do?key=fc4f06b8-a0ae-4e66-8170-e3712fec5b79&lastMod=1476242230273" width="75" height="75" style="margin:15px 10px 10px 10px;border-radius:50%"/></span><span class="tooltip-content_developers clearfix"><img src="https://w3-connections.ibm.com/profiles/photo.do?key=fc4f06b8-a0ae-4e66-8170-e3712fec5b79&lastMod=1476242230273" /><span class="tooltip-text"><strong></strong>Leader</span></span></span></th>
+					  <td><span class="tooltip_developers tooltip-effect-1"><span class="tooltip-item_developers"><img id="yourimage" src="https://w3-connections.ibm.com/profiles/photo.do?key=9ced3afd-44a7-4e26-b5a2-4be9a1f01806&lastMod=1480399411695" width="75" height="75" style="margin:15px 10px 10px 10px;border-radius:50%"/></span><span class="tooltip-content_developers clearfix"><img src="https://w3-connections.ibm.com/profiles/photo.do?key=9ced3afd-44a7-4e26-b5a2-4be9a1f01806&lastMod=1480399411695" /><span class="tooltip-text"><strong></strong>Leader</span></span></span></th>
+					  <td><span class="tooltip_developers tooltip-effect-1"><span class="tooltip-item_developers"><img id="yourimage" src="https://w3-connections.ibm.com/profiles/photo.do?key=1b451e4e-b58b-4ec0-a69f-b92d57937658&lastMod=1476242829310" width="75" height="75" style="margin:15px 10px 10px 10px;border-radius:50%"/></span><span class="tooltip-content_developers clearfix"><img src="https://w3-connections.ibm.com/profiles/photo.do?key=1b451e4e-b58b-4ec0-a69f-b92d57937658&lastMod=1476242829310" /><span class="tooltip-text"><strong></strong>Leader</span></span></span></th>
+					  
+					</tr>
+					<tr>
+					  <td><span class="tooltip_developers tooltip-effect-1"><span class="tooltip-item_developers"><img id="yourimage" src="https://w3-connections.ibm.com/profiles/photo.do?key=3d236ae9-e438-40b2-93dc-bddc2fc0196e&lastMod=1474671749012" width="75" height="75" style="margin:15px 10px 10px 10px;border-radius:50%"/></span><span class="tooltip-content_developers clearfix"><img src="https://w3-connections.ibm.com/profiles/photo.do?key=3d236ae9-e438-40b2-93dc-bddc2fc0196e&lastMod=1474671749012" /><span class="tooltip-text"><strong></strong>Leader</span></span></span></th>
+					  <td><span class="tooltip_developers tooltip-effect-1"><span class="tooltip-item_developers"><img id="yourimage" src="https://w3-connections.ibm.com/profiles/photo.do?key=9287c51c-d6ca-4fbc-8a7a-b260f47621f0&lastMod=1480581245268" width="75" height="75" style="margin:15px 10px 10px 10px;border-radius:50%"/></span><span class="tooltip-content_developers clearfix"><img src="https://w3-connections.ibm.com/profiles/photo.do?key=9287c51c-d6ca-4fbc-8a7a-b260f47621f0&lastMod=1480581245268" /><span class="tooltip-text"><strong></strong>Leader</span></span></span></th>
+					  <td><span class="tooltip_developers tooltip-effect-1"><span class="tooltip-item_developers"><img id="yourimage" src="https://w3-connections.ibm.com/profiles/photo.do?key=e97e2c51-ce7e-4732-ae42-61a63f282c50&lastMod=1475050885267" width="75" height="75" style="margin:15px 10px 10px 10px;border-radius:50%"/></span><span class="tooltip-content_developers clearfix"><img src="https://w3-connections.ibm.com/profiles/photo.do?key=e97e2c51-ce7e-4732-ae42-61a63f282c50&lastMod=1475050885267" /><span class="tooltip-text"><strong></strong>Leader</span></span></span></th>
+					  </tr>
+					<tr>
+					  <td><span class="tooltip_developers tooltip-effect-1"><span class="tooltip-item_developers"><img id="yourimage" src="https://w3-connections.ibm.com/profiles/photo.do?key=ab4a8ad5-af9e-4e83-9792-874a854f4bc1&lastMod=1475736482195" width="75" height="75" style="margin:15px 10px 10px 10px;border-radius:50%"/></span><span class="tooltip-content_developers clearfix"><img src="https://w3-connections.ibm.com/profiles/photo.do?key=ab4a8ad5-af9e-4e83-9792-874a854f4bc1&lastMod=1475736482195" /><span class="tooltip-text"><strong></strong>Leader</span></span></span></th>
+					  <td><span class="tooltip_developers tooltip-effect-1"><span class="tooltip-item_developers"><img id="yourimage" src="https://w3-connections.ibm.com/profiles/photo.do?key=07739937-3d65-4f3d-85f8-b339a26cc906&lastMod=1476312147064" width="75" height="75" style="margin:15px 10px 10px 10px;border-radius:50%"/></span><span class="tooltip-content_developers clearfix"><img src="https://w3-connections.ibm.com/profiles/photo.do?key=07739937-3d65-4f3d-85f8-b339a26cc906&lastMod=1476312147064" /><span class="tooltip-text"><strong></strong>Leader</span></span></span></th>
+					  <td><span class="tooltip_developers tooltip-effect-1"><span class="tooltip-item_developers"><img id="yourimage" src="https://w3-connections.ibm.com/profiles/photo.do?key=315b7031-d4e3-48ff-9c08-f8cc5104f4dc&lastMod=1474673149266" width="75" height="75" style="margin:15px 10px 10px 10px;border-radius:50%"/></span><span class="tooltip-content_developers clearfix"><img src="https://w3-connections.ibm.com/profiles/photo.do?key=315b7031-d4e3-48ff-9c08-f8cc5104f4dc&lastMod=1474673149266" /><span class="tooltip-text"><strong></strong>Leader</span></span></span></th>
+					</tr>
+					<tr>
+						<td><span class="tooltip_developers tooltip-effect-1"><span class="tooltip-item_developers"><img id="yourimage" src="https://w3-connections.ibm.com/profiles/photo.do?key=848cd291-4b6d-4131-8093-b7afa20dd93a&lastMod=1479410320609" width="75" height="75" style="margin:15px 10px 0px 10px;border-radius:50%"/></span><span class="tooltip-content_developers clearfix"><img src="https://w3-connections.ibm.com/profiles/photo.do?key=848cd291-4b6d-4131-8093-b7afa20dd93a&lastMod=1479410320609" /><span class="tooltip-text"><strong></strong>Leader</span></span></span></th>
+						<td><span class="tooltip_developers tooltip-effect-1"><span class="tooltip-item_developers"><img id="yourimage" src="https://w3-connections.ibm.com/profiles/photo.do?key=2162cbb1-9409-48ec-ae11-e29a6a54b4eb&lastMod=1474671754590" width="75" height="75" style="margin:15px 10px 0px 10px;border-radius:50%"/></span><span class="tooltip-content_developers clearfix"><img src="https://w3-connections.ibm.com/profiles/photo.do?key=2162cbb1-9409-48ec-ae11-e29a6a54b4eb&lastMod=1474671754590" /><span class="tooltip-text"><strong></strong>Leader</span></span></span></th>
+						<td><span class="tooltip_developers tooltip-effect-1"><span class="tooltip-item_developers"><img id="yourimage" src="https://w3-connections.ibm.com/profiles/photo.do?key=b1c98b03-4caf-47b1-8a7f-f3a094a321eb&lastMod=1474671871286" width="75" height="75" style="margin:15px 10px 0px 10px;border-radius:50%"/></span><span class="tooltip-content_developers clearfix"><img src="https://w3-connections.ibm.com/profiles/photo.do?key=b1c98b03-4caf-47b1-8a7f-f3a094a321eb&lastMod=1474671871286" /><span class="tooltip-text"><strong></strong>Leader</span></span></span></th>
+					</tr>
+				</table>	
+			
+			</div>
+			</div>
+
+<!-- 			<div id="wrapper" style="width:100%; text-align:center">
+<img id="yourimage" src="https://w3-connections.ibm.com/profiles/photo.do?userid=c6bac4c0-8f0a-1028-81e9-db07163b51b2" width="150" height="150" style="border-radius:50%"/>
+<span class="text-content"><span>Place Name</span></span>
+</div> -->
+<!-- <ul class="img-list">
+  <li>
+    <a href="">
+      <img src="https://w3-connections.ibm.com/profiles/photo.do?userid=c6bac4c0-8f0a-1028-81e9-db07163b51b2" width="100" height="100" style="border-radius:50%" />
+      <span class="text-content"><span>Place Name</span></span>
+    </a>
+  </li>
+  <li>
+    <a href="">
+      <img src="https://w3-connections.ibm.com/profiles/photo.do?userid=c6bac4c0-8f0a-1028-81e9-db07163b51b2" width="100" height="100" style="border-radius:50%" />
+      <span class="text-content"><span>Place Name</span></span>
+    </a>
+  </li>
+    <li>
+    <a href="">
+      <img src="https://w3-connections.ibm.com/profiles/photo.do?userid=c6bac4c0-8f0a-1028-81e9-db07163b51b2" width="100" height="100" style="border-radius:50%" />
+      <span class="text-content"><span>Place Name</span></span>
+    </a>
+  </li>
+    <li>
+    <a href="">
+      <img src="https://w3-connections.ibm.com/profiles/photo.do?userid=c6bac4c0-8f0a-1028-81e9-db07163b51b2" width="100" height="100" style="border-radius:50%" />
+      <span class="text-content"><span>Place Name</span></span>
+    </a>
+  </li>
+    <li>
+    <a href="">
+      <img src="https://w3-connections.ibm.com/profiles/photo.do?userid=c6bac4c0-8f0a-1028-81e9-db07163b51b2" width="100" height="100" style="border-radius:50%" />
+      <span class="text-content"><span>Place Name</span></span>
+    </a>
+  </li>
+  <li>
+    <a href="">
+      <img src="https://w3-connections.ibm.com/profiles/photo.do?userid=c6bac4c0-8f0a-1028-81e9-db07163b51b2" width="100" height="100" style="border-radius:50%" />
+      <span class="text-content"><span>Place Name</span></span>
+    </a>
+  </li>
+    <li>
+    <a href="">
+      <img src="https://w3-connections.ibm.com/profiles/photo.do?userid=c6bac4c0-8f0a-1028-81e9-db07163b51b2" width="100" height="100" style="border-radius:50%" />
+      <span class="text-content"><span>Place Name</span></span>
+    </a>
+  </li>
+    <li>
+    <a href="">
+      <img src="https://w3-connections.ibm.com/profiles/photo.do?userid=c6bac4c0-8f0a-1028-81e9-db07163b51b2" width="100" height="100" style="border-radius:50%" />
+      <span class="text-content"><span>Place Name</span></span>
+    </a>
+  </li>
+    <li>
+    <a href="">
+      <img src="https://w3-connections.ibm.com/profiles/photo.do?userid=c6bac4c0-8f0a-1028-81e9-db07163b51b2" width="100" height="100" style="border-radius:50%" />
+      <span class="text-content"><span>Place Name</span></span>
+    </a>
+  </li>
+  <li>
+    <a href="">
+      <img src="https://w3-connections.ibm.com/profiles/photo.do?userid=c6bac4c0-8f0a-1028-81e9-db07163b51b2" width="100" height="100" style="border-radius:50%" />
+      <span class="text-content"><span>Place Name</span></span>
+    </a>
+  </li>
+    <li>
+    <a href="">
+      <img src="https://w3-connections.ibm.com/profiles/photo.do?userid=c6bac4c0-8f0a-1028-81e9-db07163b51b2" width="100" height="100" style="border-radius:50%" />
+      <span class="text-content"><span>Place Name</span></span>
+    </a>
+  </li>
+    <li>
+    <a href="">
+      <img src="https://w3-connections.ibm.com/profiles/photo.do?userid=c6bac4c0-8f0a-1028-81e9-db07163b51b2" width="100" height="100" style="border-radius:50%" />
+      <span class="text-content"><span>Place Name</span></span>
+    </a>
+  </li>
+    <li>
+    <a href="">
+      <img src="https://w3-connections.ibm.com/profiles/photo.do?userid=c6bac4c0-8f0a-1028-81e9-db07163b51b2" width="100" height="100" style="border-radius:50%" />
+      <span class="text-content"><span>Place Name</span></span>
+    </a>
+  </li>
+  <li>
+    <a href="">
+      <img src="https://w3-connections.ibm.com/profiles/photo.do?userid=c6bac4c0-8f0a-1028-81e9-db07163b51b2" width="100" height="100" style="border-radius:50%" />
+      <span class="text-content"><span>Place Name</span></span>
+    </a>
+  </li>
+    <li>
+    <a href="">
+      <img src="https://w3-connections.ibm.com/profiles/photo.do?userid=c6bac4c0-8f0a-1028-81e9-db07163b51b2" width="100" height="100" style="border-radius:50%" />
+      <span class="text-content"><span>Place Name</span></span>
+    </a>
+  </li>
+    <li>
+    <a href="">
+      <img src="https://w3-connections.ibm.com/profiles/photo.do?userid=c6bac4c0-8f0a-1028-81e9-db07163b51b2" width="100" height="100" style="border-radius:50%" />
+      <span class="text-content"><span>Place Name</span></span>
+    </a>
+  </li>
+    <li>
+    <a href="">
+      <img src="https://w3-connections.ibm.com/profiles/photo.do?userid=c6bac4c0-8f0a-1028-81e9-db07163b51b2" width="100" height="100" style="border-radius:50%" />
+      <span class="text-content"><span>Place Name</span></span>
+    </a>
+  </li>
+  <li>
+    <a href="">
+      <img src="https://w3-connections.ibm.com/profiles/photo.do?userid=c6bac4c0-8f0a-1028-81e9-db07163b51b2" width="100" height="100" style="border-radius:50%" />
+      <span class="text-content"><span>Place Name</span></span>
+    </a>
+  </li>
+    <li>
+    <a href="">
+      <img src="https://w3-connections.ibm.com/profiles/photo.do?userid=c6bac4c0-8f0a-1028-81e9-db07163b51b2" width="100" height="100" style="border-radius:50%" />
+      <span class="text-content"><span>Place Name</span></span>
+    </a>
+  </li>
+    <li>
+    <a href="">
+      <img src="https://w3-connections.ibm.com/profiles/photo.do?userid=c6bac4c0-8f0a-1028-81e9-db07163b51b2" width="100" height="100" style="border-radius:50%" />
+      <span class="text-content"><span>Place Name</span></span>
+    </a>
+  </li>
+</ul> -->
+<!-- 									<table class="team" style="margin-left:300px">
+
+                      <tr>
+                        <td align="center" valign="top"><table width="1100" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <th><table class="patlead">
+
+                              <tr>
+                                <td align="center" valign="top"><table class="Hublead">
+                                  <tr>
+                                    <th class="Hubhead"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?userid=c6bac4c0-8f0a-1028-81e9-db07163b51b2' ></a></th>
+                                  </tr>
+                                  <tr>
+                                    <td align="center" valign="top"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?userid=c6bac4c0-8f0a-1028-81e9-db07163b51b2'><img src="https://w3-connections.ibm.com/profiles/photo.do?userid=c6bac4c0-8f0a-1028-81e9-db07163b51b2" width="65" height="65" style="border-radius: 50%;">
+<span class="text-content"><span>Leader</span></span></a>
+								</td>
+                                  </tr>
+                                </table></td>
+                              </tr>
+
+                              <tr>
+                                <td align="center" valign="top"><table width="1080" border="0" cellspacing="0" cellpadding="0">
+                                  <tr>
+                                    <th><table class="sectors" >
+
+
+                                        <tr>
+                                          <th width="350" align="center" valign="top"><table class="sectors-first">
+                                              <tr>
+                                                <th class="firsthead"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?userid=243744c0-e4df-102b-88a7-ff4f02f9a305'>Kailash Raghuvanshi</a></th>
+                                              </tr>
+                                              <tr>
+                                                <td align="center" valign="top"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?userid=243744c0-e4df-102b-88a7-ff4f02f9a305'><img src="https://w3-connections.ibm.com/profiles/photo.do?userid=243744c0-e4df-102b-88a7-ff4f02f9a305" width="65" height="65"style="border-radius: 50%;"></a></td>
+                                              </tr>
+                                              <tr>
+                                                <td align="center" valign="top">&nbsp;</td>
+                                              </tr>
+                                          </table></th>
+                                          <th width="187" align="center" valign="top">
+                                              <table class="sectors-first">
+                                                <tr>
+                                                  <th class="firsthead"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?userid=c58eddc0-f46b-102a-97fa-ee322f01ca37'>Amitava Gupta</a></th>
+                                                </tr>
+                                                <tr>
+                                                  <td align="center" valign="top"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?userid=c58eddc0-f46b-102a-97fa-ee322f01ca37'><img src="https://w3-connections.ibm.com/profiles/photo.do?userid=c58eddc0-f46b-102a-97fa-ee322f01ca37" width="65" height="65"style="border-radius: 50%;"></a></td>
+                                                </tr>
+                                                <tr>
+                                                  <td align="center" valign="top">&nbsp;</td>
+                                                </tr>
+                                            </table></th>
+
+                                          <th width="350" align="center" valign="top">
+                                              <table class="sectors-first">
+                                                <tr>
+                                                  <th width="40%" class="firsthead"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?userid=fc5fadc0-8f0a-1028-93f0-db07163b51b2'>Sanjay Basu</a></th>
+                                                  <th width="5%">&nbsp;</th>
+                                                  <th width="55%" class="firsthead"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?userid=482aa4c0-37da-102a-9cbe-9bd07ea2ecc2'>Sanjay M.Deshpande</a></th>
+                                                </tr>
+                                                <tr>
+                                                  <td align="center" valign="top"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?userid=fc5fadc0-8f0a-1028-93f0-db07163b51b2'><img src="https://w3-connections.ibm.com/profiles/photo.do?userid=fc5fadc0-8f0a-1028-93f0-db07163b51b2" width="65" height="65"style="border-radius: 50%;"></a></td>
+                                                  <td align="center" valign="top">&nbsp;</td>
+                                                  <td align="center" valign="top"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?userid=482aa4c0-37da-102a-9cbe-9bd07ea2ecc2'><img src="https://w3-connections.ibm.com/profiles/photo.do?userid=482aa4c0-37da-102a-9cbe-9bd07ea2ecc2" width="65" height="65"style="border-radius: 50%;"></a></td>
+                                                </tr>
+                                                <tr>
+                                                  <td align="center" valign="top">&nbsp;</td>
+                                                  <td align="center" valign="top">&nbsp;</td>
+                                                  <td align="center" valign="top">&nbsp;</td>
+                                                </tr>
+                                            </table></th>
+                                        </tr>
+                                        <tr>
+                                          <td align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                              <tr>
+                                                <th align="center" valign="top">&nbsp;</th>
+                                              </tr>
+                                              <tr>
+                                                <td align="center" valign="top"><table width="96%" class="sectors-second">
+                                                    <tr>
+                                                      <th width="50%" class="secondhead"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?userid=21ecb740-8f0b-1028-8079-db07163b51b2'>Amol A.Ketkar</a></th>
+                                                      <th width="5%">&nbsp;</th>
+                                                      <th width="45%" class="secondhead"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?userid=a94a3bc0-15c3-102d-8b3e-b31a12142572'>Jonson V.dsouza</a></th>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" valign="top"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?userid=21ecb740-8f0b-1028-8079-db07163b51b2'><img src="https://w3-connections.ibm.com/profiles/photo.do?key=ab4a8ad5-af9e-4e83-9792-874a854f4bc1&lastMod=1434770128366" width="65" height="65"style="border-radius: 50%;"></a></td>
+                                                      <td>&nbsp;</td>
+                                                      <td align="center" valign="top"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?userid=a94a3bc0-15c3-102d-8b3e-b31a12142572'><img src="https://w3-connections.ibm.com/profiles/photo.do?key=e4e5d700-66ab-45fe-8ba2-2fc47b8ba3bd&lastMod=1436502334254" width="65" height="65"style="border-radius: 50%;"></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>&nbsp;</td>
+                                                      <td>&nbsp;</td>
+                                                      <td>&nbsp;</td>
+                                                      <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td class="secondhead"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?userid=30d369c0-8f0b-1028-8d61-db07163b51b2'>Arijit Debbarman</a></td>
+                                                      <td>&nbsp;</td>
+                                                      <td class="secondhead"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?key=3d236ae9-e438-40b2-93dc-bddc2fc0196e'>Paras Doshi</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" valign="top"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?userid=30d369c0-8f0b-1028-8d61-db07163b51b2'><img src="https://w3-connections.ibm.com/profiles/photo.do?key=37426d92-7160-41d4-bc31-0be7bb0dde0c&lastMod=1436883347650" width="65" height="65"style="border-radius: 50%;"></a></td>
+                                                      <td>&nbsp;</td>
+                                                      <td align="center" valign="top"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?key=3d236ae9-e438-40b2-93dc-bddc2fc0196e'><img src="https://w3-connections.ibm.com/profiles/photo.do?key=3d236ae9-e438-40b2-93dc-bddc2fc0196e&lastMod=1441891087286" width="65" height="65"style="border-radius: 50%;"></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" valign="top">&nbsp;</td>
+                                                      <td>&nbsp;</td>
+                                                      <td align="center" valign="top">&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td class="secondhead"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?userid=261351c0-5516-102b-810d-f4f7902a5c09'>Manisha V.Ghatpan</a></td>
+                                                      <td>&nbsp;</td>
+                                                      <td class="secondhead"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?userid=316007c0-8173-102f-9482-e2213ee42e39'>Surbhi K. Pai</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" valign="top"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?userid=261351c0-5516-102b-810d-f4f7902a5c09'><img src="https://w3-connections.ibm.com/profiles/photo.do?key=9287c51c-d6ca-4fbc-8a7a-b260f47621f0&lastMod=1439471461726" width="65" height="65"style="border-radius: 50%;"></a></td>
+                                                      <td>&nbsp;</td>
+                                                      <td align="center" valign="top"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?userid=316007c0-8173-102f-9482-e2213ee42e39'><img src="https://w3-connections.ibm.com/profiles/photo.do?key=c6cc7011-8a65-4a9d-9ef1-e83dabed4a1b&lastMod=1437171624010" width="65" height="65"style="border-radius: 50%;"></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" valign="top">&nbsp;</td>
+                                                      <td>&nbsp;</td>
+                                                      <td align="center" valign="top">&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td class="secondhead"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?key=d0023232-01e3-4770-966e-7cb707a3145b'>Nirmalya Goswami</a></td>
+                                                      <td>&nbsp;</td>
+                                                      <td class="secondhead"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?key=07739937-3d65-4f3d-85f8-b339a26cc906'>Nitin R. Patil</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" valign="top"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?key=d0023232-01e3-4770-966e-7cb707a3145b'><img src="https://w3-connections.ibm.com/profiles/photo.do?key=d0023232-01e3-4770-966e-7cb707a3145b&lastMod=1439521372216" width="65" height="65"style="border-radius: 50%;"></a></td>
+                                                      <td>&nbsp;</td>
+                                                      <td align="center" valign="top"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?key=07739937-3d65-4f3d-85f8-b339a26cc906'><img src="https://w3-connections.ibm.com/profiles/photo.do?key=07739937-3d65-4f3d-85f8-b339a26cc906&lastMod=1442218097254" width="65" height="65"style="border-radius: 50%;"></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" valign="top">&nbsp;</td>
+                                                      <td>&nbsp;</td>
+                                                      <td align="center" valign="top">&nbsp;</td>
+                                                    </tr>
+                                                </table></td>
+                                              </tr>
+                                          </table></td>
+                                          <td align="center" valign="top"><table class="sectors-second">
+                                            <tr>
+                                              <th>&nbsp;</th>
+                                            </tr>
+                                            <tr>
+                                              <td class="secondhead"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?userid=93dc3140-9d06-1034-97f3-a8aa994df202'>Arnab Chakrabarty</a></td>
+                                            </tr>
+                                            <tr>
+                                              <td align="center" valign="top"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?userid=93dc3140-9d06-1034-97f3-a8aa994df202'><img src="https://w3-connections.ibm.com/profiles/photo.do?key=402a5a41-b359-4fcc-9db5-40b868b942e5&lastMod=1439549268313" width="65" height="65"style="border-radius: 50%;"></a></td>
+                                            </tr>
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                              <td class="secondhead"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?userid=c0308dc0-5a28-102f-9fcc-c8474e382c13'>Sarmistha Das</a></td>
+                                            </tr>
+                                            <tr>
+                                              <td align="center" valign="top"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?userid=c0308dc0-5a28-102f-9fcc-c8474e382c13'><img src="https://w3-connections.ibm.com/profiles/photo.do?key=a042d2c7-393e-4b33-867e-0e53c778a782&lastMod=1437812416628" width="65" height="65"style="border-radius: 50%;"></a></td>
+                                            </tr>
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                              <td class="secondhead"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?key=848cd291-4b6d-4131-8093-b7afa20dd93a'>Sutapriya Das</a></td>
+                                            </tr>
+                                            <tr>
+                                              <td align="center" valign="top"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?key=848cd291-4b6d-4131-8093-b7afa20dd93a'><img src="https://w3-connections.ibm.com/profiles/photo.do?key=848cd291-4b6d-4131-8093-b7afa20dd93a&lastMod=1441253754798" width="65" height="65"style="border-radius: 50%;"></a></td>
+                                            </tr>
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+
+                                          </table></td>
+
+                                          <td align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                              <tr>
+                                                <th align="center" valign="top" scope="col">&nbsp;</th>
+                                              </tr>
+                                              <tr>
+                                                <td align="center" valign="top"><table class="sectors-second">
+                                                    <tr>
+                                                      <th class="secondhead"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?userid=57cb9ec0-ec4d-102f-9d20-86a3c2278315'>Ajay R. Deshmukh</a></th>
+                                                      <th width="5%">&nbsp;</th>
+                                                      <th class="secondhead"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?key=1b451e4e-b58b-4ec0-a69f-b92d57937658'>Kaustabh Nandi</a></th>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" valign="top"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?userid=57cb9ec0-ec4d-102f-9d20-86a3c2278315'><img src="https://w3-connections.ibm.com/profiles/photo.do?key=215c4f77-4355-4302-83d3-a8e587de4559&lastMod=1438186489462" width="65" height="65"style="border-radius: 50%;"></a></td>
+                                                      <td>&nbsp;</td>
+                                                      <td align="center" valign="top"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?key=1b451e4e-b58b-4ec0-a69f-b92d57937658'><img src="https://w3-connections.ibm.com/profiles/photo.do?key=1b451e4e-b58b-4ec0-a69f-b92d57937658&lastMod=1426776074713" width="65" height="65"style="border-radius: 50%;"></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" valign="top">&nbsp;</td>
+                                                      <td>&nbsp;</td>
+                                                      <td align="center" valign="top">&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td class="secondhead"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?userid=7e19aa40-5b1a-1030-8b24-cb922bd54099'>Rajmeher S. Mistry</a></td>
+                                                      <td>&nbsp;</td>
+                                                      <td class="secondhead"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?key=2162cbb1-9409-48ec-ae11-e29a6a54b4eb'>Shrirang M Bhave</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" valign="top"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?userid=7e19aa40-5b1a-1030-8b24-cb922bd54099'><img src="https://w3-connections.ibm.com/profiles/photo.do?key=e25346c1-e935-476e-b2fe-fb14abc4c3ad&lastMod=1434400616188" width="65" height="65"style="border-radius: 50%;"></a></td>
+                                                      <td>&nbsp;</td>
+                                                      <td align="center" valign="top"><a target="_blank" href='https://w3-connections.ibm.com/profiles/html/profileView.do?key=2162cbb1-9409-48ec-ae11-e29a6a54b4eb'><img src="https://w3-connections.ibm.com/profiles/photo.do?key=2162cbb1-9409-48ec-ae11-e29a6a54b4eb&lastMod=1446542696576" width="65" height="65"style="border-radius: 50%;"></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" valign="top">&nbsp;</td>
+                                                      <td>&nbsp;</td>
+                                                      <td align="center" valign="top">&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" valign="top">&nbsp;</td>
+                                                      <td>&nbsp;</td>
+                                                      <td align="center" valign="top">&nbsp;</td>
+                                                    </tr>
+                                                </table></td>
+                                              </tr>
+                                          </table></td>
+                                        </tr>
+                                    </table></th>
+                                  </tr>
+                                  <tr>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                </table></td>
+                              </tr>
+
+                            </table></th>
+                          </tr>
+                          <tr>
+                            <td align="center" valign="top">&nbsp;</td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                      </tr>
+                    </table> -->
+		</div>
+		<div id="contact_form" style="margin-top:90px;" class="portBox">
+						
+				<!-- <h3>Proposal Hub Request Form</h3> -->
+				<div class="data-holder">
+					
+					<div class="form-holder">
+					
+						<form id="form" action="request" method="post" name="patreq" class="form-pat"  onsubmit="return validatesectorForm()">
+							
+							<h3>Proposal Hub Request </h3>
+							<h4>Please fill up the Request Details section (<span class="required">*</span> indicates mandatory fields)</h4>
+							
+							
+							
+							<!-- <label>
+								<span>Opportunity Number </span>&nbsp;
+								<input style="width: 20%" id="oppno" type="text" name="oppno" placeholder="" />
+								&nbsp;
+								<input type="button" class="button" id="search" value="Lookup"  />
+								<div id="spinner"></div>
+							</label> -->
+							<label class="note">Please use <i>TBD </i> if Opportunity Number is not available</label>
+							
+								  
+								
+							<fieldset class="opp_details">
+								<legend>Opportunity Details:</legend>
+								
+							
+							
+							
+							
+					<!-- 		<div class="leftfield">
+									<label>
+									<span>Opportunity Number </span>&nbsp;
+									<input  id="oppno" type="text" name="oppno" placeholder="" />
+								
+									</label>
+								</div> -->
+							
+							
+								
+								<div class="leftfield">
+									<label>
+									<span>Opportunity Number<span class="required">*</span> </span>&nbsp;
+									<input  id="oppno" type="text" name="oppno" placeholder="" />
+								
+									</label>
+								</div>
+								
+								<div class="rightfield">
+									<label>
+									<span>Region</span>
+									<input id="Region" type="text" name="reg" placeholder="" readonly />
+									</label>
+								</div>
+								
+								<div class="leftfield country">
+									<label>
+									<span>Country</span>
+									<input  id="Country" type="text" name="cntry" placeholder="" readonly />
+									</label>
+								</div>
+								
+								
+									<div class="rightfield geography">
+									<label>
+									<span>Geo</span>
+									<input  id="Geo" type="text" name="geo" placeholder="" readonly />
+									</label>
+								</div>
+								
+								
+								
+								
+								
+								
+								
+								
+								<div class="leftfield sector">
+									<label>
+									<span>Sector</span>
+									<input  id="Sctr" type="text" name="sctr"  placeholder="" readonly />
+									</label>
+								</div>
+								<div class="rightfield industry">
+									<label>
+									<span>Industry</span>
+									<input  id="Industry" type="text" name="inds" placeholder="" readonly />
+									</label>
+								</div>
+								
+								<div class="leftfield">
+									<label>
+									<span>Client Name</span>
+									<input  id="clnt" type="text" name="clntnm" placeholder="" readonly />
+									</label>
+								</div>
+								<br/>
+								<div class="rightfield">
+									<label>
+									<span>Opportunity Name</span>
+									<input  id="oname" type="text" name="oppname" placeholder="" readonly />
+									</label>
+								</div>
+								
+								<div class="fullfield">
+									<label>
+									<span>Request Description<span class="required">*</span></span>
+									<textarea  id="Comment" name="comment" placeholder="" readonly></textarea>
+									</label>
+								</div>
+								
+								<div class="leftfield service">
+									<label>
+									<span>Primary Service Area</span>
+									<input  id="Service" type="text" name="psl" placeholder="" readonly />
+									</label>
+								</div>
+								
+								<div class="rightfield">
+									<label>
+									<span>Primary Offering Area</span>
+									<input  id="Offering" type="text" name="ofa" placeholder="" readonly />
+									</label>
+								</div>
+								
+								<div class="leftfield">
+									<label>
+									<span>Total GBS TCV (USD,M)</span>
+									<input  id="Total" type="text" name="gbs" placeholder="" readonly />
+									</label>
+								</div>
+								
+								<div class="rightfield">
+									<label>
+									<span>Opportunity Owner (Intranet id)</span>
+									<input  id="Owner" type="text" name="oppown" placeholder="" readonly />
+									</label>
+								</div>
+								
+							</fieldset>
+							
+							<font color='red'> <div id="ijk"> </div> </font><br/>
+							<fieldset>
+								<legend>Request Details</legend>
+								
+								<div class="leftfield">
+									<label>
+									<span>Request Date</span><input id="demo1" type="text" name="reqstdate" style="width: 290px;"><a href="javascript:NewCal('demo1')"><img src="images/cal.gif" width="16" height="16" border="0"></a>
+
+									</label>
+								</div>
+								
+								<div class="rightfield">
+									<label>
+									<span>Requestor (Intranet id) <span class="required">*</span></span>
+									<input id="Email" type="text" name="rqstr" placeholder="" />
+									</label>
+								</div>
+								
+								<div class="leftfield">
+									<label>
+									<span>Type of Proposal <span class="required">*</span></span>
+									<select name="typpro" id="prop">
+										<option value="AMS" selected>AMS</option>
+										<option value="ADS">CRM</option>
+										<option value="CS">PEGA</option>
+										<option value="GPS">GPS</option>
+										<option value="OTHERS">OTHERS</option>
+									</select>
+									</label>
+								</div>
+								
+								<div class="rightfield">
+									<label>
+									<span>Contract Type</span>
+									<input name="cntrtyp" id="ctrct" type="text" placeholder=""/>
+									</label>
+								</div>
+								
+								<div class="leftfield">
+									<label>
+									<span>Incumbent</span>
+									<input id="Incumbent" type="text" name="inc" placeholder="" />
+									</label>
+								</div>
+								
+								<div class="rightfield">
+									<label>
+									<span>Main Competition</span>
+									<input id="Competition" type="text" name="mncomp" placeholder="" />
+									</label>
+								</div>
+								
+								<div class="leftfield">
+									<label>
+									<span>Other Competitors</span>
+									<input id="Competitors" type="text" name="othcomp" placeholder="" />
+									</label>
+								</div>
+								
+								<div class="rightfield">
+									<label>
+									<span>Required Start Date</span>
+									<input id="demo5" type="text" name="stdate" style="width: 290px;"><a href="javascript:NewCal('demo5')"><img src="images/cal.gif" width="16" height="16" border="0"></a>
+
+									</label>
+								</div>
+								
+								<div class="fullfield">
+									<label>
+									<span>Competitive Strategy Summary</span>
+									<textarea id="csc" name="summ" placeholder=""></textarea>
+									</label>
+								</div>
+								
+								<div class="leftfield">
+									<label>
+									<span>Date this Proposal is Due from Proposal Hub</span>
+									<input id="demo6" type="text"  name="pdp" style="width: 290px;"><a href="javascript:NewCal('demo6')"><img src="images/cal.gif" width="16" height="16" border="0"></a>
+
+									</label>
+								</div>
+								
+								<div class="rightfield">
+									<label>
+									<span>Date this Proposal is Due to Customer<span class="required">*</span></span><input id="demo7" type="text" name="pdc" style="width: 290px;"><a href="javascript:NewCal('demo7')"><img src="images/cal.gif" width="16" height="16" border="0"></a>
+
+									</label>
+								</div>
+								
+								<div class="fullfield">
+									<label>
+									<span>Comments or Additional Requirements</span>
+									<textarea id="Additional Comment" name="add" placeholder=""></textarea>
+									</label>
+								</div>
+								
+							</fieldset>
+							
+							<label>
+								<span>&nbsp;</span> 
+								<input type="submit" class="button" value="Submit" />&nbsp;&nbsp;
+								<input type="reset" class="button" value="Reset" /> 
+							</label>
+							
+						</form>
+						
+					</div>
+					</div>
+
+		</div>
+		<div id="feedback_form" style="margin-top:30px;" class="portBox" >
+			<form id="form_1">
+				<h3>PAT Feedback Form</h3>
+				<p id="returnmessage"></p>
+				<label>Name: <span>*</span></label> <input type="text" id="name"
+					placeholder="Name" /> <label>Email: <span>*</span></label> <input
+					type="text" id="email" placeholder="Email" /> <label>Contact
+					No: <span>*</span>
+				</label> <input type="text" id="contact" placeholder="10 digit Mobile no." />
+				<label>Message:</label>
+				<textarea id="message" placeholder="Message......."></textarea>
+				<input type="button" id="submit" value="Send Message" />
+			</form>
+		</div>
+	</div>
+
+
+</body>
+</html>
